@@ -5,13 +5,14 @@ import 'package:spotify/screens/premium.dart';
 import 'package:spotify/screens/search.dart';
 
 class TabsScreen extends StatefulWidget {
+
   @override
   _TabsScreenState createState() => _TabsScreenState();
 }
 
 class _TabsScreenState extends State<TabsScreen> {
 
-  List<Map<String, Object>> _pages;
+  List <Map<String,Object>> _pages;
   int _selectedPageIndex = 0;
 
   @override
@@ -20,19 +21,19 @@ class _TabsScreenState extends State<TabsScreen> {
     _pages = [
       {
         'page': HomeTab(),
-        'title': 'Home',
+
       },
       {
         'page': SearchTab(),
-        'title': 'Search',
+
       },
       {
         'page': LibraryTab(),
-        'title': 'Library',
+
       },
       {
         'page': PremiumTab(),
-        'title': 'Premium'
+
       }
     ];
     super.initState();
@@ -62,9 +63,10 @@ class _TabsScreenState extends State<TabsScreen> {
 
         ],
       ),
-      body: null,
+      body: HomeTab(),
       bottomNavigationBar: BottomNavigationBar(
-        onTap: _selectPage,
+        onTap: _pages[_selectedPageIndex]['page'],
+        currentIndex: _selectedPageIndex,
         backgroundColor: Theme.of(context).primaryColor,
         unselectedItemColor: Colors.grey,
         selectedItemColor: Colors.white,

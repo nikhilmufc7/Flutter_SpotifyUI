@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:spotify/screens/library.dart';
+import 'package:spotify/screens/premium.dart';
+import 'package:spotify/screens/search.dart';
 import 'screens/tabsScreen.dart';
 
 
@@ -12,7 +15,9 @@ class myApp extends StatefulWidget {
 class _myAppState extends State<myApp> {
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
+
       title: 'Spotify',
       theme: ThemeData(
           primaryColor: Color(0xff222326),
@@ -32,6 +37,12 @@ class _myAppState extends State<myApp> {
 
       routes: {
         '/': (ctx) => TabsScreen(),
+        SearchTab.routeName : (ctx) => SearchTab(),
+        LibraryTab.routeName: (ctx) => LibraryTab(),
+        PremiumTab.routeName: (ctx) => PremiumTab(),
+
+
+
       },
     );
 
