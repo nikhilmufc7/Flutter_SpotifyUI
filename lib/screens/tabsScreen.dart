@@ -5,14 +5,12 @@ import 'package:spotify/screens/premium.dart';
 import 'package:spotify/screens/search.dart';
 
 class TabsScreen extends StatefulWidget {
-
   @override
   _TabsScreenState createState() => _TabsScreenState();
 }
 
 class _TabsScreenState extends State<TabsScreen> {
-
-  List <Map<String,Object>> _pages;
+  List<Map<String, Object>> _pages;
   int _selectedPageIndex = 0;
 
   @override
@@ -21,19 +19,15 @@ class _TabsScreenState extends State<TabsScreen> {
     _pages = [
       {
         'page': HomeTab(),
-
       },
       {
         'page': SearchTab(),
-
       },
       {
         'page': LibraryTab(),
-
       },
       {
         'page': PremiumTab(),
-
       }
     ];
     super.initState();
@@ -45,22 +39,19 @@ class _TabsScreenState extends State<TabsScreen> {
     });
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,
+        elevation: 0,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.settings),
-            onPressed: ()=> debugPrint("settings pressed"),
+            onPressed: () => debugPrint("settings pressed"),
             iconSize: 25,
             padding: EdgeInsets.only(right: 20),
           ),
-
-
         ],
       ),
       body: HomeTab(),
@@ -85,7 +76,6 @@ class _TabsScreenState extends State<TabsScreen> {
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
             icon: Icon(Icons.library_music),
-
             title: Text("Library"),
           ),
           BottomNavigationBarItem(
@@ -93,10 +83,8 @@ class _TabsScreenState extends State<TabsScreen> {
             icon: Icon(Icons.monetization_on),
             title: Text("Premium"),
           )
-
         ],
       ),
     );
-
   }
 }
