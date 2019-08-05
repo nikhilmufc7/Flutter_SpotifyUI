@@ -54,9 +54,9 @@ class _TabsScreenState extends State<TabsScreen> {
           ),
         ],
       ),
-      body: HomeTab(),
+      body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
-        onTap: _pages[_selectedPageIndex]['page'],
+        onTap: _selectPage,
         currentIndex: _selectedPageIndex,
         backgroundColor: Theme.of(context).primaryColor,
         unselectedItemColor: Colors.grey,
