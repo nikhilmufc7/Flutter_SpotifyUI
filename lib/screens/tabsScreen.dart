@@ -42,18 +42,18 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).primaryColor,
-        elevation: 0,
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.settings),
-            onPressed: () => debugPrint("settings pressed"),
-            iconSize: 25,
-            padding: EdgeInsets.only(right: 20),
-          ),
-        ],
-      ),
+//      appBar: AppBar(
+//        backgroundColor: Theme.of(context).primaryColor,
+//        elevation: 0,
+//        actions: <Widget>[
+//          IconButton(
+//            icon: Icon(Icons.settings),
+//            onPressed: () => debugPrint("settings pressed"),
+//            iconSize: 25,
+//            padding: EdgeInsets.only(right: 20),
+//          ),
+//        ],
+//      ),
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
