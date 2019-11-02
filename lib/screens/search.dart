@@ -10,45 +10,39 @@ class SearchTab extends StatefulWidget {
 class _SearchTabState extends State<SearchTab> {
   @override
   Widget build(BuildContext context) {
+    final deviceSize = MediaQuery.of(context).size;
     return Scaffold(
-      body: NestedScrollView(
-        headerSliverBuilder: (BuildContext context, bool isScrolled) {
-          return <Widget>[
-            SliverAppBar(
-              expandedHeight: 200.0,
-              floating: false,
-              pinned: false,
-              flexibleSpace: FlexibleSpaceBar(
-                  centerTitle: true,
-                  title: Text("Search",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18.0,
-                      )),
-                  background: Container(
-                    decoration: new BoxDecoration(
-                      gradient: new LinearGradient(
-                        colors: [
-                          Theme
-                              .of(context)
-                              .primaryColor,
-                          Theme
-                              .of(context)
-                              .accentColor,
-                        ],
-                        begin: FractionalOffset.topLeft,
-                        end: FractionalOffset.bottomRight,
-                      ),
-                    ),
-                  )),
-
+      backgroundColor: Colors.black,
+      body: ListView(
+        children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(top: 80),
+            height: 50,
+            width: deviceSize.width,
+            child: Text("Search",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w900,
+              fontSize: 36
+            ),),
+          ),
+          Container(
+            margin: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(5)
             ),
-
-          ];
-        },
-        body: Container(
-          child: Text('search'),
-        ),
+            child: TextField(
+              keyboardType: TextInputType.text,
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.search),
+                hintText: "Artists, songs or podcasts",
+                alignLabelWithHint: true,
+              ),
+            ),
+          )
+        ],
       ),
     );
   }
