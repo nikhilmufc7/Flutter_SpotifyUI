@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import '../providers/dummy_data.dart';
+import '../widgets/albums.dart';
+import '../models/albumData.dart';
+
 
 class HomeTab extends StatefulWidget {
   @override
@@ -8,6 +12,8 @@ class HomeTab extends StatefulWidget {
 class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
+
+    final deviceSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.black,
       body: ListView(
@@ -35,11 +41,21 @@ class _HomeTabState extends State<HomeTab> {
               fontSize: 22
             ),),
           ),
-          ListView(
-            children: <Widget>[
+         Container(
+           width: deviceSize.width,
+           margin: EdgeInsets.only(left: 10,top: 10),
+           height: 250,
+           child:  ListView(
+//            shrinkWrap: true,
+               scrollDirection: Axis.horizontal,
+               children: dummyAlbums.map((itemData)=> Album(
+                 itemData.id,
+                 itemData.title,
+                 itemData.imageUrl,
 
-            ],
-          )
+               )).toList()
+           ),
+         )
 
         ],
       ),
