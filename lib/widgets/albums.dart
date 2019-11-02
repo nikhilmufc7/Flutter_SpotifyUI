@@ -17,8 +17,8 @@ class Album extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       child: Container(
-        margin: EdgeInsets.all(10),
-        height: 250,
+        margin: EdgeInsets.only(left: 10,right: 10, top: 10),
+        height: 200,
         width: 130,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(2),
