@@ -1,5 +1,6 @@
 import '../models/albumData.dart';
 import 'package:flutter/material.dart';
+import '../models/artistData.dart';
 
 var dummyAlbums = [
   AlbumData(
@@ -47,5 +48,158 @@ var dummyAlbums = [
     id: 'c8',
     title: 'Best Of Camila Cabello',
     imageUrl: "https://www.billboard.com/files/styles/article_main_image/public/media/camila-cabello-london-june-2018-billboard-1548.jpg",
+  ),
+];
+
+
+var dummyUserData = [
+  AlbumData(
+    id: 'c1',
+    title: 'Daily Mix 1',
+    imageUrl: "https://i.pinimg.com/474x/e7/6b/c9/e76bc9736fe6493a9eddbfb3ef6bc094.jpg",
+  ),
+  AlbumData(
+    id: 'c2',
+    title: 'Daily Mix 2',
+    imageUrl: "https://i.redd.it/avxncpgy8do11.png",
+  ),
+
+  AlbumData(
+    id: 'c3',
+    title: 'Daily Mix 3',
+    imageUrl: "https://ph-files.imgix.net/cbbf111b-fccf-48a7-8505-bedc7b5d5272?auto=format",
+  ),
+
+  AlbumData(
+    id: 'c4',
+    title: 'Daily Mix 4',
+    imageUrl: "https://pbs.twimg.com/media/CtcVNESWIAEYGWI.jpg",
+  ),
+
+  AlbumData(
+    id: 'c5',
+    title: 'Daily Mix 5',
+    imageUrl: "https://i.pinimg.com/474x/e7/6b/c9/e76bc9736fe6493a9eddbfb3ef6bc094.jpg",
+  ),
+
+  AlbumData(
+    id: 'c6',
+    title: 'Daily Mix 6',
+    imageUrl: "https://pbs.twimg.com/media/CtcVNESWIAEYGWI.jpg",
+  ),
+
+  AlbumData(
+    id: 'c7',
+    title: 'Tastebreakers',
+    imageUrl: "https://lineup-images.scdn.co/tastebreakers_DEFAULT-en.jpg",
+  ),
+
+  AlbumData(
+    id: 'c8',
+    title: 'Best Of Camila Cabello',
+    imageUrl: "https://lineup-images.scdn.co/time-capsule_DEFAULT-en.jpg",
+  ),
+];
+
+
+
+var dummyArtist = [
+  ArtistData(
+    id: 'a1',
+    title: "Dua Lipa",
+    imageUrl: "https://i.scdn.co/image/ab67616d0000b273b75e062b52a8bbee368b70b6"
+  ),
+
+  ArtistData(
+      id: 'a2',
+      title: "Tom Walker",
+      imageUrl: "https://i.scdn.co/image/adeb41af699388e27233e4fb35c4564f6929f2a8"
+  ),
+
+  ArtistData(
+      id: 'a3',
+      title: "Kodaline",
+      imageUrl: "https://i.scdn.co/image/55451df0b61a34de9cd2b57417421f462f9ac832"
+  ),
+
+  ArtistData(
+      id: 'a4',
+      title: "Finneas",
+      imageUrl: "https://i.scdn.co/image/03f1a5cc03d7f305d3703c87831114d0291ace66"
+  ),
+
+  ArtistData(
+      id: 'a5',
+      title: "Billie Elish",
+      imageUrl: "https://pl.scdn.co/images/pl/default/04964eccd1a2e3beb3ea2b455645caa2a101df6d"
+  ),
+
+  ArtistData(
+      id: 'a6',
+      title: "Ruth. B",
+      imageUrl: "https://i.scdn.co/image/ab67616d0000b273ef283fbeb261d0a98131a73a"
+  ),
+
+  ArtistData(
+      id: 'a7',
+      title: "Damien Jurado",
+      imageUrl: "https://i.scdn.co/image/d58951bcfdb1305ff1db1d875f8776989c100656"
+  ),
+
+  ArtistData(
+      id: 'a4',
+      title: "Stu Larsen",
+      imageUrl: "https://images.sk-static.com/images/media/profile_images/artists/673517/huge_avatar"
+  ),
+];
+
+
+
+var dummyAlbumData = [
+  AlbumData(
+    id: 'c1',
+    title: 'This is Alessia Cara',
+    imageUrl: "https://pl.scdn.co/images/pl/default/54595bbe90a4cf9735fd15bab98a8e4591307772",
+  ),
+  AlbumData(
+    id: 'c2',
+    title: 'This is Marshmello',
+    imageUrl: "https://i.scdn.co/image/ab67706f000000021333364f5d4af194c49a69ed",
+  ),
+
+  AlbumData(
+    id: 'c3',
+    title: 'This is Alan Walker',
+    imageUrl: "https://pl.scdn.co/images/pl/default/1800ddf6d052a056605a4ad0f801363f0fdddbb9",
+  ),
+
+  AlbumData(
+    id: 'c4',
+    title: 'This is Alan Walker',
+    imageUrl: "https://i.scdn.co/image/960547a625bc2eb742bb3dd170cbc049d2e94cf9",
+  ),
+
+  AlbumData(
+    id: 'c5',
+    title: 'This is Anne-Marie',
+    imageUrl: "https://images.genius.com/f20e38699c80349f817c8bd7f169373b.640x640x1.jpg",
+  ),
+
+  AlbumData(
+    id: 'c6',
+    title: 'This is Blackbear',
+    imageUrl: "https://i.scdn.co/image/2434ccdde56b354c722efa02e25892d1bb41f076",
+  ),
+
+  AlbumData(
+    id: 'c7',
+    title: 'This is Imagine Dragons',
+    imageUrl: "https://i.scdn.co/image/52e4a7e4406bba40ff644e0f006044c41448262f",
+  ),
+
+  AlbumData(
+    id: 'c8',
+    title: 'This is Kodaline',
+    imageUrl: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO2HkQXm-default.jpg",
   ),
 ];
