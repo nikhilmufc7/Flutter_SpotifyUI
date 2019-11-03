@@ -1,6 +1,7 @@
 import '../models/albumData.dart';
 import 'package:flutter/material.dart';
 import '../models/artistData.dart';
+import '../models/searchData.dart';
 
 var dummyAlbums = [
   AlbumData(
@@ -203,3 +204,61 @@ var dummyAlbumData = [
     imageUrl: "https://thisis-images.scdn.co/37i9dQZF1DZ06evO2HkQXm-default.jpg",
   ),
 ];
+
+var dummySearchTile = [
+  SearchData(
+    color: Colors.greenAccent,
+    imageUrl: "https://i.pinimg.com/236x/a9/5e/30/a95e30dee9f3a2c7e41e8ceb07c0e704.jpg",
+    title: "Pop",
+  ),
+
+  SearchData(
+    color: Colors.amber,
+    imageUrl: "https://pl.scdn.co/images/pl/default/24a6da1ddb3154e96ab94cd806ec7a5b1e15ea3d",
+    title: "Hip-Hop",
+  ),
+
+  SearchData(
+    color: Colors.indigo,
+    imageUrl: "https://pl.scdn.co/images/pl/default/627d7ba29bd2f734fd98e5586338b576cd2956af",
+      title: "Indie",
+  ),
+
+  SearchData(
+    color: Colors.red,
+    imageUrl: "https://i.scdn.co/image/ab67706f00000002bd95dafe0c7057ebd57f5aee",
+    title: "Hip-Hop",
+  ),
+
+
+];
+
+
+var dummySearchAllTile = [
+  SearchData(
+    color: Colors.pinkAccent,
+    imageUrl: "https://shorefire.com/images/made/images/uploads/files/Singles_Cover_Mt-Joy_400_400_s_c1.jpg",
+    title: "Radio",
+  ),
+
+  SearchData(
+    color: Colors.orange,
+    imageUrl: "https://techcrunch.com/wp-content/uploads/2016/09/gettyimages-562613667.jpg?w=730&crop=1",
+    title: "Concerts",
+  ),
+
+  SearchData(
+    color: Colors.deepOrangeAccent,
+    imageUrl: "https://pl.scdn.co/images/pl/default/c3f23803cd161c15fdc3702135cc5b823ac51b42",
+    title: "Bollywood",
+  ),
+
+  SearchData(
+    color: Colors.lightGreen,
+    imageUrl: "https://stararena.files.wordpress.com/2017/09/kpop-daebak-bts-love-yourself.jpg?w=646",
+    title: "K-Pop",
+  ),
+
+
+];
+
