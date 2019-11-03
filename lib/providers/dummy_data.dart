@@ -259,6 +259,29 @@ var dummySearchAllTile = [
     title: "K-Pop",
   ),
 
+  SearchData(
+    color: Colors.amber,
+    imageUrl: "https://www.capradio.org/media/9214709/0801DissectPod5P.jpg",
+    title: "Podcasts",
+  ),
+
+  SearchData(
+    color: Colors.lightBlue,
+    imageUrl: "https://pbs.twimg.com/media/CtcVNESWIAEYGWI.jpg",
+    title: "Made for you",
+  ),
+
+  SearchData(
+    color: Colors.purple,
+    imageUrl: "https://cdn.playlists.net/images/playlists/image/medium/f45cc73d2261a37dd2da0a5f1d783f0b.jpg",
+    title: "Discover",
+  ),
+
+  SearchData(
+    color: Colors.lime,
+    imageUrl: "https://asset-cdn.campaignbrief.com/wp-content/uploads/sites/2/2019/10/08111436/Spotify3.jpg",
+    title: "Diwali",
+  ),
 
 ];
 
