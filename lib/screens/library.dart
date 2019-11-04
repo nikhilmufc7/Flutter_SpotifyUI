@@ -1,5 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import '../providers/dummy_data.dart';
+import '../widgets/libraryList.dart';
 
 class LibraryTab extends StatefulWidget {
   static const routeName = '/library';
@@ -20,6 +22,7 @@ class _LibraryTabState extends State<LibraryTab>
 
   @override
   Widget build(BuildContext context) {
+    final deviceSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
@@ -107,7 +110,6 @@ class _LibraryTabState extends State<LibraryTab>
                   child: Row(
                     children: <Widget>[
                       Container(
-
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           color: Colors.white30,
@@ -151,10 +153,24 @@ class _LibraryTabState extends State<LibraryTab>
                       )
                     ],
                   )),
+              Container(
+                height: deviceSize.height,
+                width: deviceSize.width,
+                margin: EdgeInsets.only(left: 10),
+                child: ListView(
+                    shrinkWrap: true,
+                    physics: ScrollPhysics(),
+                    scrollDirection: Axis.vertical,
+                    children: dummyLibraryData
+                        .map((itemData) => LibraryCard(
+                              itemData.imageUrl,
+                              itemData.title,
+                              itemData.subTitle,
+                            ))
+                        .toList()),
+              ),
             ],
-          )
-          ),// tab 1 container
-          
+          )), // tab 1 container
 
           // tab 2
           Container(
