@@ -2,6 +2,7 @@ import '../models/albumData.dart';
 import 'package:flutter/material.dart';
 import '../models/artistData.dart';
 import '../models/searchData.dart';
+import '../models/libraryData.dart';
 
 var dummyAlbums = [
   AlbumData(
@@ -283,5 +284,55 @@ var dummySearchAllTile = [
     title: "Diwali",
   ),
 
+];
+
+var dummyLibraryData =[
+  LibraryData(
+      imageUrl: "https://pl.scdn.co/images/pl/default/1800ddf6d052a056605a4ad0f801363f0fdddbb9",
+      title: "My All time favorites",
+      subTitle: "by Nikhil Singh"
+  ),
+
+  LibraryData(
+      imageUrl: "https://i.scdn.co/image/55db20d7c49bdcf52162474265c66ca601054b1c",
+      title: "Liked Songs",
+      subTitle: "51 Songs"
+  ),
+
+  LibraryData(
+      imageUrl: "https://i.scdn.co/image/c130cf4ab4e8a9b8046153102bccedae5ad6d8ed",
+      title: "Sleep Songs",
+      subTitle: "by Nikhil Singh"
+  ),
+
+  LibraryData(
+      imageUrl: "https://pbs.twimg.com/media/D6tCJXjW0AAXgzb.jpg",
+      title: "New Music Friday",
+      subTitle: "Made for Nikhil"
+  ),
+
+  LibraryData(
+      imageUrl: "https://i.scdn.co/image/26007fcd7781ea9222b23ab3654ba86f60dd6e18",
+      title: "Best of Adele",
+      subTitle: "by Spotify"
+  ),
+
+  LibraryData(
+      imageUrl: "https://i.scdn.co/image/94fd5fbdb622c6320ce14eb1845fedd100cf2168",
+      title: "Ariana & Chill",
+      subTitle: "by Mrudula"
+  ),
+
+  LibraryData(
+      imageUrl: "https://pl.scdn.co/images/pl/default/e7c069f4e4387500dffbb2f631b908fe43993db7",
+      title: "Spanish & English",
+      subTitle: "by Pablo"
+  ),
+
+  LibraryData(
+      imageUrl: "https://i.scdn.co/image/1d3cb8c3f866c394ed06f4b538ae3c06168ac0c4",
+      title: "Kodaline Melodies",
+      subTitle: "by Roberto"
+  ),
 ];
 
