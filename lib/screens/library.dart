@@ -152,7 +152,9 @@ class _LibraryTabState extends State<LibraryTab>
                     ],
                   )),
             ],
-          )),
+          )
+          ),// tab 1 container
+          
 
           // tab 2
           Container(
