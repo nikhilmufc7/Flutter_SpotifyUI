@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/albumDetails.dart';
 
 class Album extends StatelessWidget {
   final String id;
@@ -16,6 +17,9 @@ class Album extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: (){
+        Navigator.of(context).pushNamed(AlbumDetails.routeName);
+      },
       child: Container(
         margin: EdgeInsets.only(left: 10,right: 10, top: 10),
         height: 200,

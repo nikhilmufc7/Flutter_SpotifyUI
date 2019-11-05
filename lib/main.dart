@@ -3,6 +3,7 @@ import 'package:spotify/screens/library.dart';
 import 'package:spotify/screens/premium.dart';
 import 'package:spotify/screens/search.dart';
 import 'screens/tabsScreen.dart';
+import 'screens/albumDetails.dart';
 
 
 void main()=> runApp(myApp());
@@ -40,6 +41,7 @@ class _myAppState extends State<myApp> {
         SearchTab.routeName : (ctx) => SearchTab(),
         LibraryTab.routeName: (ctx) => LibraryTab(),
         PremiumTab.routeName: (ctx) => PremiumTab(),
+        AlbumDetails.routeName: (ctx) => AlbumDetails()
 
 
 
