@@ -150,8 +150,36 @@ class _AlbumDetailsState extends State<AlbumDetails> {
                   )),
             ],
           ),
+          ListView(
+            shrinkWrap: true,
+            physics: ScrollPhysics(),
+            children: <Widget>[
+
+            ],
+          )
         ],
       ),
     ));
   }
 }
+
+
+
+//import java.io.*;
+//public class buffereddemo{
+//  public static void main(String args[]){
+//  try
+//  {
+//  FileInputStream bis = new FileInputStream("/home/ayush/Documents/text.txt");
+//  FileOutputStream out = new FileOutputStream("/home/ayush/Documents/text.txt");
+//  String S = "Hello World";
+//  byte b[] = S.getBytes();
+//  out.write(b);
+//  System.out.println("Data written to the file");
+//  bis.close();
+//  }
+//  catch(Exception c)
+//  {
+//  System.out.println(c.getMessage());
+//  }
+
