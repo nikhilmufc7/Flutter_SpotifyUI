@@ -41,10 +41,7 @@ class _myAppState extends State<myApp> {
         SearchTab.routeName : (ctx) => SearchTab(),
         LibraryTab.routeName: (ctx) => LibraryTab(),
         PremiumTab.routeName: (ctx) => PremiumTab(),
-        AlbumDetails.routeName: (ctx) => AlbumDetails()
-
-
-
+        AlbumDetails.routeName: (ctx) => AlbumDetails(),
       },
     );
 
