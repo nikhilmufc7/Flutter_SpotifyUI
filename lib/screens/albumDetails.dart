@@ -14,6 +14,8 @@ class _AlbumDetailsState extends State<AlbumDetails> {
   String title;
   String imageUrl;
 
+  bool isSwitched = true;
+
   var _loadedInitData = false;
 
   @override
@@ -150,6 +152,41 @@ class _AlbumDetailsState extends State<AlbumDetails> {
                   )),
             ],
           ),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.only(left: 30),
+                child: Text("Download",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white
+                ),),
+              ),
+
+             Container(
+               padding: EdgeInsets.only(right: 20),
+               child:  Switch(
+                 inactiveThumbColor: Colors.grey,
+                 inactiveTrackColor: Colors.white10,
+                 value: isSwitched,
+                 onChanged: (value){
+                   setState(() {
+                     isSwitched = value;
+                   });
+                 },
+                 activeColor: Colors.green,
+                 activeTrackColor: Colors.lightGreen,
+
+               ),
+             )
+            ],
+          ),
+
+
+
           ListView(
             shrinkWrap: true,
             physics: ScrollPhysics(),
@@ -165,21 +202,4 @@ class _AlbumDetailsState extends State<AlbumDetails> {
 
 
 
-//import java.io.*;
-//public class buffereddemo{
-//  public static void main(String args[]){
-//  try
-//  {
-//  FileInputStream bis = new FileInputStream("/home/ayush/Documents/text.txt");
-//  FileOutputStream out = new FileOutputStream("/home/ayush/Documents/text.txt");
-//  String S = "Hello World";
-//  byte b[] = S.getBytes();
-//  out.write(b);
-//  System.out.println("Data written to the file");
-//  bis.close();
-//  }
-//  catch(Exception c)
-//  {
-//  System.out.println(c.getMessage());
-//  }
 
