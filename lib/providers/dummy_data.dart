@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/artistData.dart';
 import '../models/searchData.dart';
 import '../models/libraryData.dart';
+import '../models/songList.dart';
 
 var dummyAlbums = [
   AlbumData(
@@ -333,6 +334,15 @@ var dummyLibraryData =[
       imageUrl: "https://i.scdn.co/image/1d3cb8c3f866c394ed06f4b538ae3c06168ac0c4",
       title: "Kodaline Melodies",
       subTitle: "by Roberto"
+  ),
+];
+
+
+var dummySongsList = [
+  SongList(
+    title: "Memories",
+    subTitle: "Maroon 5",
+    albumName: "Memories"
   ),
 ];
 
