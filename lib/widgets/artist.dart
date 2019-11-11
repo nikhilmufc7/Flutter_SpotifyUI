@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/albumDetails.dart';
 
 class Artist extends StatelessWidget {
   final String id;
@@ -9,13 +10,13 @@ class Artist extends StatelessWidget {
 
   Artist(this.id, this.title,this.imageUrl);
 
-//  void selectAlbum(BuildContext ctx) {
-//    Navigator.of(ctx).pushNamed(CategoryDetail.routeName, arguments: {'id' : id, 'title': title,});
-//  }
-
+  void selectAlbum(BuildContext ctx){
+    Navigator.of(ctx).pushNamed(AlbumDetails.routeName, arguments: {'id': id, 'title': title, 'imageUrl': imageUrl});
+  }
   @override
   Widget build(BuildContext context) {
     return InkWell(
+        onTap:  () => selectAlbum(context),
         child: Container(
           margin: EdgeInsets.only(left: 10,right: 10, top: 10),
           height: 200,

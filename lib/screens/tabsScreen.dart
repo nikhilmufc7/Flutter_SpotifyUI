@@ -78,11 +78,6 @@ class _TabsScreenState extends State<TabsScreen> {
             icon: Icon(Icons.library_music),
             title: Text("Library"),
           ),
-          BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
-            icon: Icon(Icons.monetization_on),
-            title: Text("Premium"),
-          )
         ],
       ),
     );

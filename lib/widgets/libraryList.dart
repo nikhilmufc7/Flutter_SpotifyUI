@@ -10,8 +10,7 @@ class LibraryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final deviceSize = MediaQuery.of(context).size;
-    return Card(
-      child: Container(
+    return  Container(
         padding: EdgeInsets.all(10),
         color: Colors.black,
 //        height: 100,
@@ -57,7 +56,6 @@ class LibraryCard extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
+      );
   }
 }
