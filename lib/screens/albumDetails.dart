@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../providers/dummy_data.dart';
 import '../widgets/albums.dart';
+import '../widgets/songList.dart';
 
 class AlbumDetails extends StatefulWidget {
   static const routeName = '/albumDetails';
@@ -160,7 +161,7 @@ class _AlbumDetailsState extends State<AlbumDetails> {
                 padding: EdgeInsets.only(left: 30),
                 child: Text("Download",
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 18,
                   fontWeight: FontWeight.w900,
                   color: Colors.white
                 ),),
@@ -190,10 +191,14 @@ class _AlbumDetailsState extends State<AlbumDetails> {
           ListView(
             shrinkWrap: true,
             physics: ScrollPhysics(),
-            children: <Widget>[
+            children:   dummySongsList
+                .map((itemData) => SongList(
+              itemData.title,
+              itemData.subTitle,
+              itemData.albumName,
+            ))
+                .toList()),
 
-            ],
-          )
         ],
       ),
     ));
