@@ -340,9 +340,36 @@ var dummyLibraryData =[
 
 var dummySongsList = [
   SongList(
-    title: "Memories",
-    subTitle: "Maroon 5",
-    albumName: "Memories"
+    title: "My Stress",
+    subTitle: "NF",
+    albumName: "The Search"
+  ),
+  SongList(
+      title: "hot birl bummer",
+      subTitle: "Blackbear",
+      albumName: "Blood Harmony"
+  ),
+  SongList(
+      title: "Stupid Deep",
+      subTitle: "Jon Bellion",
+      albumName: "Glory Sound Prep"
+  ),
+  SongList(
+      title: "Take Me To Church",
+      subTitle: "Hozier",
+      albumName: "Hozier"
+  ),
+
+  SongList(
+      title: "All Time Low",
+      subTitle: "Jon Bellion, Stormzy",
+      albumName: "All Time Low"
+  ),
+
+  SongList(
+      title: "1-800-273-8255",
+      subTitle: "Logic, Alessia Cara, Khalid",
+      albumName: "Everybody"
   ),
 ];
 
