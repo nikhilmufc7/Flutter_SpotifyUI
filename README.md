@@ -4,11 +4,11 @@
 
 ### Screenshots
 
-![1st Screenshot](../spotify/assets/images/screenshot1.png)
-![1st Screenshot](../spotify/assets/images/screenshot4.png)
-![1st Screenshot](../spotify/assets/images/screenshot3.png)
+![1st Screenshot](/assets/images/screenshot1.png)
+![1st Screenshot](/assets/images/screenshot4.png)
+![1st Screenshot](/assets/images/screenshot3.png)
 ![1st Screenshot](/assets/images/screenshot2.png)
-![1st Screenshot](../spotify/assets/images/screenshot5.png)
+![1st Screenshot](/assets/images/screenshot5.png)
 
 
 
